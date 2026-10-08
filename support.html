@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soporte – Facultad de Ciencias Médicas</title>
+  <meta name="description" content="Página oficial de soporte de la aplicación móvil Facultad de Ciencias Médicas (FCM).">
+  <style>
+    :root {
+      --primary: #0b3d6e;
+      --primary-dark: #082c50;
+      --accent: #1f7a8c;
+      --bg: #f4f7fa;
+      --card: #ffffff;
+      --text: #1e2a36;
+      --muted: #5b6b7a;
+      --border: #dde4ea;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: #fff;
+      padding: 48px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: clamp(1.6rem, 5vw, 2.4rem);
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1.05rem;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 28px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+    }
+
+    p + p { margin-top: 12px; }
+
+    ul {
+      margin-top: 12px;
+      padding-left: 22px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    .info-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .info-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .info-list li:last-child { border-bottom: none; }
+
+    .info-list strong { color: var(--primary); }
+
+    .email-box {
+      margin-top: 20px;
+      background: #eef5f8;
+      border: 1px solid var(--accent);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .email-box .label {
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .email-box a {
+      display: inline-block;
+      margin-top: 6px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .email-box a:hover,
+    .email-box a:focus { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 24px 16px 40px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      header { padding: 36px 16px; }
+      section { padding: 22px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Soporte – Facultad de Ciencias Médicas</h1>
+    <p>Centro de ayuda de la aplicación móvil oficial</p>
+  </header>
+
+  <main>
+    <section id="acerca">
+      <h2>Acerca de la aplicación</h2>
+      <p>
+        <strong>Facultad de Ciencias Médicas (FCM App)</strong> es la aplicación móvil oficial de la
+        Facultad de Ciencias Médicas, pensada para brindar a la comunidad acceso a sus servicios
+        y contenidos desde el dispositivo móvil.
+      </p>
+    </section>
+
+    <section id="info">
+      <h2>Información de la aplicación</h2>
+      <ul class="info-list">
+        <li><strong>Nombre:</strong> Facultad de Ciencias Médicas</li>
+        <li><strong>Abreviatura:</strong> FCM</li>
+        <li><strong>Plataforma:</strong> Aplicación móvil</li>
+      </ul>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Si tenés algún inconveniente, podés comunicarte con el equipo de soporte. Estamos para
+        ayudarte con:
+      </p>
+      <ul>
+        <li>Problemas técnicos</li>
+        <li>Inconvenientes con el acceso</li>
+        <li>Errores de la aplicación</li>
+        <li>Consultas relacionadas con su uso</li>
+      </ul>
+
+      <div class="email-box">
+        <div class="label">Correo electrónico de soporte</div>
+        <a href="mailto:SOPORTE_EMAIL_AQUI">fcm.desarrollo@gmail.com</a>
+      </div>
+
+      <p style="margin-top:16px; color:var(--muted); font-size:0.95rem;">
+        Para agilizar la atención, te recomendamos describir el problema con el mayor detalle posible.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; Facultad de Ciencias Médicas (FCM). Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
